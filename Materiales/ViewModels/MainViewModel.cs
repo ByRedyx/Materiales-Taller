@@ -1,5 +1,6 @@
 ﻿using Materiales.Model;
 using Materiales.Models;
+using Materiales.Security;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data.SqlClient;
@@ -44,7 +45,8 @@ namespace Materiales.ViewModel
             Lineas.Clear();
 
             //Cadena de conexión
-            string connectionString = "Server=svrsage;Database=OSG;User Id=excel;Password=excel@2024;";
+            //string connectionString = "Server=servidor;Database=db;User Id=admin;Password=admin123;";
+            string connectionString = SecureConnectionManager.LoadConnectionString();
 
             //Consulta SQL de la vista que contiene toda la información de los materiales
             string queryMaterials = "SELECT * FROM VIS_CO_PenentRebre";
