@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Windows.Data;
 
-namespace Materiales.Converters
+namespace GrupoOSG.Converters
 {
     public class DateOnlyToStringConverter : IValueConverter
     {

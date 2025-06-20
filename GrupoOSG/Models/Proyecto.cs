@@ -1,4 +1,4 @@
-﻿namespace Materiales.Models
+﻿namespace GrupoOSG.Models
 {
     public class Proyecto
     {

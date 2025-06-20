@@ -1,13 +1,13 @@
-﻿using Materiales.Model;
-using Materiales.Models;
-using Materiales.Security;
+﻿using GrupoOSG.Model;
+using GrupoOSG.Models;
+using GrupoOSG.Security;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace Materiales.ViewModel
+namespace GrupoOSG.ViewModel
 {
     public class MainViewModel : INotifyPropertyChanged
     {
@@ -46,7 +46,7 @@ namespace Materiales.ViewModel
 
             //Cadena de conexión
             //string connectionString = "Server=servidor;Database=db;User Id=admin;Password=admin123;";
-            string connectionString = SecureConnectionManager.LoadConnectionString();
+            string connectionString = EncryptedConnectionMaterials.LoadConnectionString();
 
             //Consulta SQL de la vista que contiene toda la información de los materiales
             string queryMaterials = "SELECT * FROM VIS_CO_PenentRebre";

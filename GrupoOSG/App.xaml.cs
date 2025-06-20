@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace VeureProductesRestants
+namespace GrupoOSG
 {
     /// <summary>
     /// Interaction logic for App.xaml

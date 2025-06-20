@@ -1,4 +1,4 @@
-﻿namespace Materiales.Model
+﻿namespace GrupoOSG.Model
 {
     public class LineaMateriales
     {
